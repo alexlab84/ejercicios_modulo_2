@@ -1,0 +1,17 @@
+.btn {
+    background-color: purple;
+    height: 35px;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    margin: 100px;
+}
+
+.list {
+    background-color: orange;
+}
+
+.list li {
+    background-color: orangered;
+    margin-block: 1em;
+}
