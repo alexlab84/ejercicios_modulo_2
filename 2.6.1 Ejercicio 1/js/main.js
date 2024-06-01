@@ -1,6 +1,6 @@
 'use strict';
 
-function calculateBoxModel(boolean, num1, num2,num3) {
+const calculateBoxModel = (boolean, num1, num2,num3) => {
     const borderBox = num1 + num2 + num3;
     const contentBox = num1;
     if(boolean === true) {
@@ -18,3 +18,7 @@ console.log(calculator);
 
 const calculator2 = calculateBoxModel(false, 50, 10, 10);
 console.log(calculator2);
+
+const calculator3 = calculateBoxModel(true, 80, 10, 10);
+console.log(calculator3);
+
