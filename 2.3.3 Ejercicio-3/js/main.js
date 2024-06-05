@@ -7,7 +7,16 @@ let userAvatar = "http://www.fillmurray.com/300/300";
 
 const image = document.querySelector('.user__avatar');
 
-window.addEventListener('load' , (ev) => {
+/* window.addEventListener('load' , (ev) => {
     debugger;
     image.innerHTML = userAvatar;
-});
+    
+}); */
+
+image.src = userAvatar;
+
+/* if (userAvatar = '') {
+    return DEFAULT_AVATAR;
+} else {
+    return userAvatar;
+} */
