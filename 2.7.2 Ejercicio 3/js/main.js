@@ -1,30 +1,23 @@
 'use strict';
 
-const cestaPeras = {
-    max: 1000,
-    min: 1,
-    actual: 0,
-    inicial: 0,
-    add: function (num) {
-        const add = this.inicial + num;
-        this.actual = this.inicial + num; 
-        return add;
-    },
-    remove: function (num) {
-        return this.add(this.actual) - num;
-    },
-    reset: function () {
-        return this.inicial;
-    }
-};
+const user = {};
 
+const job = 'developer';
 
-console.log(cestaPeras.add(80));
-console.log(cestaPeras.remove(10));
-console.log(cestaPeras.reset());
+user.firstName = 'Ale';
+user.lastName = 'Sanchez';
+user.age = 39;
+user.job = job;
 
+console.log(user);
 
+user.firstName = 'Periquita';
 
+console.log(user);
+
+user.age += 1;
+
+console.log(user);
 
 
 
