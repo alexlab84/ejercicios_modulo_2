@@ -14,18 +14,16 @@ const result = document.querySelector('.js__result');
 
 btn.addEventListener('click', (ev) => {
     ev.preventDefault();
-    let books = [bookOne.value, bookTwo.value];
-    /* console.log(books); */
-    checkBooks(books);
+    let books = [];
+    let newBooks = books.push(bookOne.value, bookTwo.value);
+    console.log(newBooks);
     
-
-}); 
-
-function checkBooks(books) {
-    for (const book of books) {
-        
+    for (const newBooks of books) {
+        debugger;
         result.innerHTML = `¡A mí también me encantó ${bookOne.value}!
                             ¡A mí también me encantó ${bookTwo.value}! 
                             Tenemos mucho en común, humana.`;
     }; 
-};
+
+}); 
+
