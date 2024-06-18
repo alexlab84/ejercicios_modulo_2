@@ -19,7 +19,7 @@ btn.addEventListener('click', (ev) => {
     console.log(newBooks);
     
     for (const newBooks of books) {
-        debugger;
+        
         result.innerHTML = `¡A mí también me encantó ${bookOne.value}!
                             ¡A mí también me encantó ${bookTwo.value}! 
                             Tenemos mucho en común, humana.`;
